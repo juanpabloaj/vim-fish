@@ -12,7 +12,7 @@ if !exists("main_syntax")
 endif
 
 
-syntax region fishComment start=+^;+ end=+$+ keepend
+syntax region fishComment start=+;+ end=+$+ keepend
 syntax keyword fishConditional if else end_if then case section caseof case_of end_case end_section endcase endif
 syntax keyword fishRepeat loop end_loop while section command endcommand end_command endloop
 syntax keyword fishFunction def end define defin defi
