@@ -13,6 +13,7 @@ endif
 
 
 syntax region fishComment start=+;+ end=+$+ keepend
+syntax region fishString start=+'+ end=+'+ keepend
 syntax keyword fishConditional if else end_if then case section caseof case_of end_case end_section endcase endif
 syntax keyword fishRepeat loop end_loop while section command endcommand end_command endloop
 syntax keyword fishFunction def end define defin defi
@@ -22,6 +23,7 @@ syntax keyword fishWords3 a_1 a_2 a_wipp a3 a4 act_energy alpha angle anisotropi
 syntax keyword fishWords4 abs acos and asin atan atan2 close cos cparse exp fc_arg float fmem fstring get_mem imem in int ln log lose_mem mat_inverse mat_transpose max min not open or out parse pre_parse read rez_exe sclose sgn sin sopen sqrt sread string swrite table_size tan type write xtable ytable beam ddonut donut hole qdonut reg_add pr_struc ps3d region disp_mag extrap_to_gp mc_fos ps servo zonk relax m_camclay m_drucker m_dy m_elas finn supsolve hyper m_duncan m_mohr m_ss bond_s int_var m_ubi spup ininv i_stress ps derivative erf erfc exp_int filter fftransform froot integrate ludcmp lubksb _modred number spectrum
 
 hi link fishComment Comment
+hi link fishString Comment
 hi link fishConditional Conditional
 hi link fishRepeat Repeat
 hi link fishFunction Function
